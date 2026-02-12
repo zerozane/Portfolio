@@ -190,7 +190,7 @@ contactForm.addEventListener('submit', (e) => {
     const originalText = btn.textContent;
 
     btn.textContent = '✓ ส่งเรียบร้อยแล้ว!';
-    btn.style.background = 'linear-gradient(135deg, #5dad76, #7cc98f)';
+    btn.style.background = 'linear-gradient(135deg, #10b981, #34d399)';
 
     setTimeout(() => {
         btn.textContent = originalText;
