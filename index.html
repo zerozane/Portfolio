@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Frontend Developer & UX/UI Designer">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-avatar">
+                    <img src="profile.png" alt="Phopiang Punpook" class="avatar-img">
+                </div>
+                <p class="hero-greeting">สวัสดี, ฉันชื่อ</p>
+                <h1 class="hero-name">Phopiang Punpook</h1>
+                <h2 class="hero-title">
+                    <span class="typing-wrapper">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </h2>
+                <p class="hero-description">
+                    ผู้หลงใหลในการสร้างสรรค์เว็บไซต์ที่สวยงาม ใช้งานง่าย และมอบประสบการณ์ที่ดีให้กับผู้ใช้
+                </p>
+                <div class="hero-cta">
+                    <a href="#skills" class="btn btn-primary">ดู Skills ของฉัน</a>
+                    <a href="#contact" class="btn btn-outline">ติดต่อฉัน</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">portfolio.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Phopiang Punpook"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Frontend Dev"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>,
+    <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"UX/UI Design"</span>,
+    <span class="code-string">"Wireframing"</span>,
+    <span class="code-string">"Prototyping"</span>,
+    <span class="code-string">"Figma"</span>,
+    <span class="code-string">"BA / Analysis"</span>,
+    <span class="code-string">"IT Support"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Creating amazing web experiences"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">เกี่ยวกับฉัน</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Frontend Developer</h3>
+                    <p>พัฒนาเว็บไซต์ด้วย HTML, CSS และ JavaScript สร้างประสบการณ์ที่ดีบนหน้าจอ</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                                stroke="currentColor" stroke-width="1.5" fill="none" />
+                        </svg>
+                    </div>
+                    <h3>UX/UI Designer</h3>
+                    <p>ออกแบบ UI ด้วย Figma, Wireframing และ Prototyping เพื่อผู้ใช้งาน</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>BA / Analysis</h3>
+                    <p>วิเคราะห์ระบบธุรกิจ รวบรวมความต้องการ และจัดทำเอกสารสำหรับการพัฒนา</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ทักษะของฉัน</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card" data-category="dev">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Frontend</h3>
+                    <p class="skill-desc">พัฒนาเว็บไซต์ฝั่ง Frontend ด้วยเทคโนโลยีทันสมัย</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </div>
+
+                <!-- UX/UI -->
+                <div class="skill-card" data-category="design">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                            <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                            <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                            <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">UX/UI</h3>
+                    <p class="skill-desc">ออกแบบประสบการณ์ผู้ใช้ที่ใช้งานง่ายและสวยงาม</p>
+                    <div class="skill-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+
+                <!-- HTML -->
+                <div class="skill-card" data-category="dev">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4L6 20L12 22L18 20L20 4H4Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 8H16L15 16L12 17L9 16L8.5 12H12" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">HTML</h3>
+                    <p class="skill-desc">โครงสร้างเว็บไซต์ด้วย HTML5 Semantic Elements</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">Semantic</span>
+                    </div>
+                </div>
+
+                <!-- Wireframing -->
+                <div class="skill-card" data-category="design">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M2 8H22" stroke="currentColor" stroke-width="2" />
+                            <path d="M9 8V21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Wireframing</h3>
+                    <p class="skill-desc">วาง Layout และโครงสร้างเว็บเพื่อวางแผนก่อนพัฒนา</p>
+                    <div class="skill-tags">
+                        <span class="tag">Layout</span>
+                        <span class="tag">Structure</span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card" data-category="dev">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4L6 20L12 22L18 20L20 4H4Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 10L12 8L16 10L12 12L8 10Z" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 12V16L16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <p class="skill-desc">จัดการ Style, Animation และ Responsive Design</p>
+                    <div class="skill-tags">
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+
+                <!-- Prototyping -->
+                <div class="skill-card" data-category="design">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Prototyping</h3>
+                    <p class="skill-desc">สร้าง Prototype เพื่อทดสอบก่อนพัฒนาจริง</p>
+                    <div class="skill-tags">
+                        <span class="tag">Interactive</span>
+                        <span class="tag">Testing</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card" data-category="dev">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 8V14C12 15.1 11.1 16 10 16H9" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path
+                                d="M15 12H17C17.55 12 18 12.45 18 13V14C18 15.1 17.1 16 16 16H15C14.45 16 14 15.55 14 15V13C14 12.45 14.45 12 15 12Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-desc">เขียนโปรแกรมเพื่อทำให้เว็บมีชีวิตและ Interactive</p>
+                    <div class="skill-tags">
+                        <span class="tag">ES6+</span>
+                        <span class="tag">DOM</span>
+                    </div>
+                </div>
+
+                <!-- Figma -->
+                <div class="skill-card" data-category="design">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 5.5A3.5 3.5 0 018.5 2H12v7H8.5A3.5 3.5 0 015 5.5z" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M12 2h3.5a3.5 3.5 0 110 7H12V2z" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 12.5a3.5 3.5 0 117 0 3.5 3.5 0 11-7 0z" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M5 19.5A3.5 3.5 0 018.5 16H12v3.5a3.5 3.5 0 11-7 0z" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M5 12.5A3.5 3.5 0 018.5 9H12v7H8.5A3.5 3.5 0 015 12.5z" stroke="currentColor"
+                                stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Figma</h3>
+                    <p class="skill-desc">ออกแบบ UI/UX ด้วย Figma อย่างมืออาชีพ</p>
+                    <div class="skill-tags">
+                        <span class="tag">Design Tool</span>
+                        <span class="tag">UI</span>
+                    </div>
+                </div>
+
+                <!-- BA / Analysis -->
+                <div class="skill-card" data-category="analysis">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M9 17V7M13 17V12M17 17V10M7 3H5C3.9 3 3 3.9 3 5V7M17 3H19C20.1 3 21 3.9 21 5V7M7 21H5C3.9 21 3 20.1 3 19V17M17 21H19C20.1 21 21 20.1 21 19V17"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">BA / Analysis</h3>
+                    <p class="skill-desc">วิเคราะห์ระบบธุรกิจและรวบรวมความต้องการ</p>
+                    <div class="skill-tags">
+                        <span class="tag">Requirement</span>
+                        <span class="tag">Analysis</span>
+                    </div>
+                </div>
+
+                <!-- IT Support -->
+                <div class="skill-card" data-category="support">
+                    <div class="skill-icon-wrapper">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path
+                                d="M9.09 9C9.57 7.82 10.7 7 12 7C13.66 7 15 8.34 15 10C15 11.31 14.18 12.42 13 12.91C12.62 13.07 12.38 13.45 12.38 13.86V14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="12" cy="17" r="1" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">IT Support</h3>
+                    <p class="skill-desc">ให้บริการสนับสนุนด้าน IT และแก้ไขปัญหาเทคนิค</p>
+                    <div class="skill-tags">
+                        <span class="tag">Support</span>
+                        <span class="tag">Troubleshoot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ผลงานของฉัน</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card project-card-featured" id="smartCampusCard" style="cursor: pointer;"
+                    onclick="window.location.href='projects/smart-campus.html'">
+                    <div class="project-image">
+                        <div class="project-click-overlay">
+                            <span class="click-overlay-text">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3h6v6M14 10l6.1-6.1M9 21H3v-6M10 14l-6.1 6.1" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                คลิกดูรายละเอียด
+                            </span>
+                        </div>
+                        <div class="project-browser">
+                            <div class="browser-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="browser-url">smart-campus.rmutt.ac.th</span>
+                            </div>
+                            <div class="browser-body">
+                                <div class="project-carousel" id="projectCarousel">
+                                    <div class="carousel-track">
+                                        <img src="image/Screenshot 2026-02-11 210422.png"
+                                            alt="Smart Campus Screenshot 1" class="carousel-slide active">
+                                        <img src="image/Screenshot 2026-02-11 210551.png"
+                                            alt="Smart Campus Screenshot 2" class="carousel-slide">
+                                        <img src="image/Screenshot 2026-02-11 210604.png"
+                                            alt="Smart Campus Screenshot 3" class="carousel-slide">
+                                        <img src="image/Screenshot 2026-02-11 210614.png"
+                                            alt="Smart Campus Screenshot 4" class="carousel-slide">
+                                        <img src="image/Screenshot 2026-02-11 210627.png"
+                                            alt="Smart Campus Screenshot 5" class="carousel-slide">
+                                    </div>
+                                    <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <div class="carousel-dots" id="carouselDots">
+                                        <span class="carousel-dot active"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                        <span class="carousel-dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fullscreen Overlay -->
+                    <div class="project-fullscreen-overlay" id="fullscreenOverlay">
+                        <div class="fullscreen-content">
+                            <button class="fullscreen-close-btn" id="closeFullscreenBtn" title="ปิด">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <button class="fullscreen-nav-btn fullscreen-prev-btn" id="fullscreenPrev"
+                                aria-label="Previous">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <img src="" alt="Fullscreen Preview" class="fullscreen-img" id="fullscreenImg">
+                            <button class="fullscreen-nav-btn fullscreen-next-btn" id="fullscreenNext"
+                                aria-label="Next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">🎓 โปรเจคจบ</div>
+                        <h3 class="project-title">Smart Campus RMUTT</h3>
+                        <p class="project-subtitle">ระบบแอปพลิเคชันแนะนำเส้นทางและค้นหาห้องเรียนภายในมหาวิทยาลัย</p>
+                        <p class="project-desc">
+                            พัฒนาแอปพลิเคชันสำหรับค้นหาห้องเรียนและนำทางภายในมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี
+                            เพื่อแก้ปัญหาการหลงทางและความล่าช้าในการเข้าเรียนหรือสอบ
+                            โดยออกแบบให้ใช้งานง่าย รองรับอุปกรณ์มือถือ
+                        </p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="var(--accent-1)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>ค้นหาห้องเรียนได้รวดเร็ว</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="var(--accent-1)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>แนะนำเส้นทางภายในมหาวิทยาลัย</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="var(--accent-1)" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>รองรับ Mobile ใช้งานง่าย</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="projects/smart-campus.html" class="btn btn-primary project-btn"
+                                onclick="event.stopPropagation()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 3h6v6M14 10l6.1-6.1M9 21H3v-6M10 14l-6.1 6.1" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                ดูรายละเอียด
+                            </a>
+                            <button class="btn btn-outline project-btn" id="fullscreenBtnAlt"
+                                onclick="event.stopPropagation()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                ดูแบบเต็มจอ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ช่องทางติดต่อ</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.17 21.03 19.34 21 18.5 20.85C15.97 20.35 13.57 19.26 11.5 17.68C9.56 16.21 7.94 14.38 6.74 12.29C5.43 9.99 4.65 7.42 4.5 4.79C4.47 4.23 4.92 3.79 5.48 3.79H8.48C8.92 3.79 9.3 4.1 9.38 4.53C9.53 5.38 9.8 6.2 10.18 6.97C10.32 7.25 10.25 7.59 10.01 7.79L8.79 8.82C10.29 11.53 12.47 13.72 15.18 15.21L16.21 13.99C16.41 13.75 16.75 13.68 17.03 13.82C17.8 14.2 18.62 14.47 19.47 14.62C19.9 14.7 20.21 15.08 20.21 15.52V16.92H22Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+66 XX-XXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.03 7.03 1 12 1C16.97 1 21 5.03 21 10Z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bangkok, Thailand</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="ชื่อของคุณ" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="อีเมลของคุณ" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="ข้อความ" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-text">© 2026 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Campus RMUTT - ระบบแอปพลิเคชันแนะนำเส้นทางและค้นหาห้องเรียน">
+    <title>Smart Campus RMUTT | Project Detail</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+</head>
+
+<body>
+    <!-- Back Navigation -->
+    <nav class="detail-nav" id="detailNav">
+        <div class="nav-container">
+            <a href="../index.html#projects" class="back-btn" id="backBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>กลับหน้าหลัก</span>
+            </a>
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="detail-hero">
+        <div class="detail-hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="detail-hero-content">
+                <div class="detail-badge">🎓 โปรเจคจบ</div>
+                <h1 class="detail-title">Smart Campus RMUTT</h1>
+                <p class="detail-subtitle">ระบบแอปพลิเคชันแนะนำเส้นทางและค้นหาห้องเรียนภายในมหาวิทยาลัย</p>
+                <div class="detail-meta">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <span>Team Project</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                                stroke="currentColor" stroke-width="1.5" fill="none" />
+                        </svg>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Screenshots -->
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-carousel-wrapper">
+                <div class="detail-browser">
+                    <div class="browser-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="browser-url">smart-campus.rmutt.ac.th</span>
+                    </div>
+                    <div class="browser-body">
+                        <div class="project-carousel detail-carousel" id="detailCarousel">
+                            <div class="carousel-track">
+                                <img src="../image/Screenshot 2026-02-11 210422.png" alt="Smart Campus - หน้า Dashboard"
+                                    class="carousel-slide active">
+                                <img src="../image/Screenshot 2026-02-11 210551.png" alt="Smart Campus - จัดการอาคาร"
+                                    class="carousel-slide">
+                                <img src="../image/Screenshot 2026-02-11 210604.png" alt="Smart Campus - จัดการผู้ใช้"
+                                    class="carousel-slide">
+                                <img src="../image/Screenshot 2026-02-11 210614.png" alt="Smart Campus - รายงาน"
+                                    class="carousel-slide">
+                                <img src="../image/Screenshot 2026-02-11 210627.png" alt="Smart Campus - ข้อเสนอแนะ"
+                                    class="carousel-slide">
+                            </div>
+                            <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <div class="carousel-dots" id="carouselDots">
+                                <span class="carousel-dot active"></span>
+                                <span class="carousel-dot"></span>
+                                <span class="carousel-dot"></span>
+                                <span class="carousel-dot"></span>
+                                <span class="carousel-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="fullscreen-trigger" id="fullscreenTrigger">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    ดูแบบเต็มจอ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Overlay -->
+    <div class="project-fullscreen-overlay" id="fullscreenOverlay">
+        <div class="fullscreen-content">
+            <button class="fullscreen-close-btn" id="closeFullscreenBtn" title="ปิด">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <button class="fullscreen-nav-btn fullscreen-prev-btn" id="fullscreenPrev" aria-label="Previous">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <img src="" alt="Fullscreen Preview" class="fullscreen-img" id="fullscreenImg">
+            <button class="fullscreen-nav-btn fullscreen-next-btn" id="fullscreenNext" aria-label="Next">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Project Details -->
+    <section class="detail-section">
+        <div class="container">
+            <div class="detail-grid">
+                <!-- Left: Description -->
+                <div class="detail-main">
+                    <div class="detail-card">
+                        <h2 class="detail-card-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            เกี่ยวกับโปรเจค
+                        </h2>
+                        <p class="detail-text">
+                            พัฒนาแอปพลิเคชันสำหรับค้นหาห้องเรียนและนำทางภายในมหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี
+                            เพื่อแก้ปัญหาการหลงทางและความล่าช้าในการเข้าเรียนหรือสอบ
+                            โดยออกแบบให้ใช้งานง่าย รองรับอุปกรณ์มือถือ
+                        </p>
+                        <p class="detail-text">
+                            ระบบนี้ช่วยให้นักศึกษาและบุคลากรสามารถค้นหาห้องเรียน อาคาร และสถานที่สำคัญต่างๆ
+                            ภายในมหาวิทยาลัยได้อย่างรวดเร็ว พร้อมทั้งแนะนำเส้นทางที่สั้นที่สุดในการเดินทาง
+                            ลดปัญหาการหลงทางและเสียเวลาในการหาห้องเรียน
+                        </p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2 class="detail-card-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            ปัญหาที่แก้ไข
+                        </h2>
+                        <div class="problem-list">
+                            <div class="problem-item">
+                                <div class="problem-icon">😵</div>
+                                <div>
+                                    <h4>นักศึกษาหลงทางในมหาวิทยาลัย</h4>
+                                    <p>โดยเฉพาะนักศึกษาใหม่ที่ยังไม่คุ้นเคยกับพื้นที่ภายในมหาวิทยาลัย</p>
+                                </div>
+                            </div>
+                            <div class="problem-item">
+                                <div class="problem-icon">⏰</div>
+                                <div>
+                                    <h4>เข้าเรียนหรือสอบไม่ทัน</h4>
+                                    <p>เสียเวลาในการหาห้องเรียนหรือห้องสอบ ทำให้เข้าเรียนล่าช้า</p>
+                                </div>
+                            </div>
+                            <div class="problem-item">
+                                <div class="problem-icon">🗺️</div>
+                                <div>
+                                    <h4>ขาดระบบนำทางภายในมหาวิทยาลัย</h4>
+                                    <p>ไม่มีระบบดิจิทัลที่ช่วยในการค้นหาและนำทางไปยังสถานที่ภายใน</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Sidebar -->
+                <div class="detail-sidebar">
+                    <div class="detail-card">
+                        <h2 class="detail-card-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Features หลัก
+                        </h2>
+                        <div class="feature-list">
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>ค้นหาห้องเรียนได้รวดเร็ว</span>
+                            </div>
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>แนะนำเส้นทางภายในมหาวิทยาลัย</span>
+                            </div>
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>รองรับ Mobile ใช้งานง่าย</span>
+                            </div>
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>ระบบ Admin จัดการข้อมูล</span>
+                            </div>
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>Dashboard สรุปข้อมูลภาพรวม</span>
+                            </div>
+                            <div class="feature-item-detail">
+                                <div class="feature-check">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <span>ระบบ Feedback / รายงานปัญหา</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2 class="detail-card-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M16 18L22 12L16 6" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 6L2 12L8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            เทคโนโลยีที่ใช้
+                        </h2>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <span class="tech-label">Frontend</span>
+                                <div class="tech-tags">
+                                    <span class="project-tag">HTML</span>
+                                    <span class="project-tag">CSS</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">React</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">Styling</span>
+                                <div class="tech-tags">
+                                    <span class="project-tag tag-teal">Tailwind CSS</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-label">Tools</span>
+                                <div class="tech-tags">
+                                    <span class="project-tag tag-amber">Vite</span>
+                                    <span class="project-tag tag-amber">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <h2 class="detail-card-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            บทบาทของฉัน
+                        </h2>
+                        <div class="role-list">
+                            <div class="role-item">
+                                <span class="role-dot"></span>
+                                <span>Frontend Developer</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-dot dot-teal"></span>
+                                <span>UX/UI Designer</span>
+                            </div>
+                            <div class="role-item">
+                                <span class="role-dot dot-amber"></span>
+                                <span>Business Analyst</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="../index.html" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p class="footer-text">© 2026 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========================================
+        // Detail Page Carousel
+        // ========================================
+        (function () {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const prevBtn = document.getElementById('carouselPrev');
+            const nextBtn = document.getElementById('carouselNext');
+            const overlay = document.getElementById('fullscreenOverlay');
+            const fullscreenImg = document.getElementById('fullscreenImg');
+            const closeBtn = document.getElementById('closeFullscreenBtn');
+            const fullscreenTrigger = document.getElementById('fullscreenTrigger');
+            const fsPrev = document.getElementById('fullscreenPrev');
+            const fsNext = document.getElementById('fullscreenNext');
+
+            if (!slides.length) return;
+
+            let current = 0;
+            let autoPlayTimer;
+
+            function goTo(index) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (index + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+            }
+
+            function updateFullscreenImg() {
+                fullscreenImg.src = slides[current].src;
+            }
+
+            function startAutoPlay() {
+                autoPlayTimer = setInterval(() => goTo(current + 1), 5000);
+            }
+
+            function resetAutoPlay() {
+                clearInterval(autoPlayTimer);
+                startAutoPlay();
+            }
+
+            prevBtn.addEventListener('click', () => { goTo(current - 1); resetAutoPlay(); });
+            nextBtn.addEventListener('click', () => { goTo(current + 1); resetAutoPlay(); });
+
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => { goTo(i); resetAutoPlay(); });
+            });
+
+            // Click slide to open fullscreen
+            function openFullscreen() {
+                updateFullscreenImg();
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                clearInterval(autoPlayTimer);
+            }
+
+            slides.forEach(slide => {
+                slide.addEventListener('click', () => {
+                    const idx = Array.from(slides).indexOf(slide);
+                    goTo(idx);
+                    openFullscreen();
+                });
+            });
+
+            if (fullscreenTrigger) {
+                fullscreenTrigger.addEventListener('click', openFullscreen);
+            }
+
+            // Fullscreen navigation
+            fsPrev.addEventListener('click', (e) => {
+                e.stopPropagation();
+                goTo(current - 1);
+                updateFullscreenImg();
+            });
+
+            fsNext.addEventListener('click', (e) => {
+                e.stopPropagation();
+                goTo(current + 1);
+                updateFullscreenImg();
+            });
+
+            function closeFullscreen() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                startAutoPlay();
+            }
+
+            if (closeBtn) closeBtn.addEventListener('click', closeFullscreen);
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) closeFullscreen();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!overlay.classList.contains('active')) return;
+                if (e.key === 'Escape') closeFullscreen();
+                if (e.key === 'ArrowLeft') { goTo(current - 1); updateFullscreenImg(); }
+                if (e.key === 'ArrowRight') { goTo(current + 1); updateFullscreenImg(); }
+            });
+
+            startAutoPlay();
+        })();
+
+        // ========================================
+        // Nav scroll effect
+        // ========================================
+        const detailNav = document.getElementById('detailNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                detailNav.classList.add('scrolled');
+            } else {
+                detailNav.classList.remove('scrolled');
+            }
+        });
+
+        // ========================================
+        // Scroll reveal
+        // ========================================
+        const revealElements = document.querySelectorAll('.detail-card, .detail-carousel-wrapper, .detail-hero-content');
+        revealElements.forEach(el => el.classList.add('reveal'));
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+
+</html>
