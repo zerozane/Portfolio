@@ -1203,8 +1203,18 @@ img {
     padding: 40px 36px 40px 20px;
 }
 
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
 .project-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     font-family: var(--font-display);
     font-size: 0.75rem;
     font-weight: 600;
@@ -1213,9 +1223,39 @@ img {
     border: 1px solid rgba(14, 165, 233, 0.12);
     padding: 4px 14px;
     border-radius: 100px;
-    margin-bottom: 4px;
     letter-spacing: 0.5px;
 }
+
+.project-badge-role {
+    color: var(--accent-2);
+    background: rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.15);
+}
+
+.project-role-highlight {
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.06), rgba(139, 92, 246, 0.04));
+    border-radius: 12px;
+    border: 1px solid rgba(99, 102, 241, 0.08);
+}
+
+.role-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    letter-spacing: 0.2px;
+}
+
+.project-desc strong {
+    color: var(--accent-1);
+    font-weight: 600;
+}
+
 
 .project-title {
     font-family: var(--font-heading);
@@ -1241,11 +1281,37 @@ img {
     margin-bottom: 20px;
 }
 
+.project-features-group {
+    margin-bottom: 16px;
+}
+
+.features-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    margin-bottom: 8px;
+    padding: 3px 12px;
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.06);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    letter-spacing: 0.3px;
+}
+
+.features-label-role {
+    color: var(--accent-2);
+    background: rgba(139, 92, 246, 0.06);
+    border-color: rgba(139, 92, 246, 0.1);
+}
+
 .project-features {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: 4px;
+    margin-bottom: 0;
 }
 
 .feature-item {
